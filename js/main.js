@@ -1,5 +1,5 @@
 // categories: (a)nimals, (e)nergies, (f)lood, (g)lobal warming, (m)obility, (n)ature, (s)pace
-const folder_names = ["ae", "af", "ag", "am", "an", "ap", "as", "ef", "eg", "em", "en", "ep", "es", "fg", "fm", "fn", "fp", "fs", "gm", "gn", "gp", "gs", "mn", "mp", "ms", "np", "ps", "sn"];
+const folder_names = ["ae", "af", "ag", "am", "an", "ap", "as", "ef", "eg", "em", "en", "ep", "es", "fg", "fm", "fn", "fp", "fs", "gm", "gn", "gp", "gs", "mn", "mp", "ms", "np", "ps", "ns"];
 
 const selection = new Set();
 const ids = new Set();
