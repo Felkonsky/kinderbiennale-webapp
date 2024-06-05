@@ -67,13 +67,14 @@ function select_category(event) {
   }
 }
 
-function changeImage(srcImage) {
+async function changeImage(srcImage) {
   const buttons = document.querySelectorAll('button'); 
   const img = document.getElementById('frame_img_dst');  
   const board = document.getElementById('board');
   const btns = Array.from(document.getElementsByClassName('btn'))
     
   img.src = srcImage;
+  await img.decode();
   img.style.opacity = 1;
   
   board.classList.add("hide_cursor");
