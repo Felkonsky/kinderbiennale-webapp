@@ -63,7 +63,7 @@ function select_category(event) {
         btn.style.boxShadow = "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px";
         btn.style.pointerEvents = "auto";
       });
-    }, 12000);
+    }, 13000);
   }
 }
 
@@ -101,7 +101,7 @@ function changeImage(srcImage) {
       });
       selection.clear();
       ids.clear();
-  }, 14001); 
+  }, 13001); 
 }
 
 function getImageByCategories(selection) {
