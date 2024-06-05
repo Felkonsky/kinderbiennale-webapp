@@ -50,7 +50,6 @@ function select_category(event) {
   selection.add(category);
   
   if (selection.size === 2) {
-    // console.log("Rendering the image from categories: " + Array.from(selection));
     btn_ids.forEach((id) => {
       const btn = document.getElementById(id);
       btn.style.boxShadow = "none";
@@ -102,7 +101,7 @@ function changeImage(srcImage) {
       });
       selection.clear();
       ids.clear();
-  }, 13001); 
+  }, 14001); 
 }
 
 function getImageByCategories(selection) {

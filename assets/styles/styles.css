@@ -2,7 +2,7 @@ body {
     background-color: white;
     margin: 0px;
     padding: 0px;
-    font-family: "Baton Turbo Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Baton Turbo Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; /* SKD FONT import??*/
     font-size: 18px;
 }
 
@@ -28,15 +28,9 @@ body {
 
 #frame_img_src {
     max-width: 1008px;
-    /*
-    max-height: 100%;
-    min-width: 10%;
-    min-height: 10%; */
-    /* max-width: 100%; */
     width: 97%;
     height: auto;
-    /* left: 50%;
-    transform: translateX(-50%); */
+   
     justify-content: center;
 
     -khtml-user-select: none;
@@ -50,10 +44,6 @@ body {
 
 #frame_img_dst {
     max-width: 1008px;
-    /* max-width: 850px;
-    max-height: 100%;
-    min-width: 10%;
-    min-height: 10%; */
     width: 97%;
     height: auto;
 
@@ -72,9 +62,7 @@ body {
 }
 
 #board {
-    /* max-width: 1008px; */
     max-width: 1008px;
-    /*min-width: 485px; */
     width:97%;
     height: auto;
     display: flex;
@@ -138,7 +126,7 @@ body {
     background-image: url("/assets/img/btns/nature.png");
 }
 
-.btn:hover, .btn:active {
+.btn:active {
     transform: scale(1.1, 1.1);
 
     background-color: #EB4E27;
@@ -166,11 +154,6 @@ img#frame_img_dst+span.tooltip{
     pointer-events: none;
 }
 
-img#frame_img_dst:hover+span.tooltip {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    opacity: 1;   
-}
-
 button.btn_tooltip {
     position: relative; 
     text-decoration: none;
@@ -184,7 +167,7 @@ button.btn_tooltip:after {
     bottom: 120%;
     left: 50%;
     transform: translateX(-50%);
-    padding: 2% 2%;
+    padding: 5% 2%;
     color: black;
     white-space: nowrap;
     opacity: 0;
@@ -210,11 +193,24 @@ button.btn_tooltip:before {
     opacity: 0;
     pointer-events: none;
 }
+@media (hover: hover) and (pointer: fine) {
+    button.btn_tooltip:hover::after {
+        bottom: 100%;
+        opacity: 1;
+    }
 
-button.btn_tooltip:hover::after {
-    bottom: 100%;
-    opacity: 1;
+    .btn:hover {
+        transform: scale(1.1, 1.1);
+    
+        background-color: #EB4E27;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        transition: all 0.2s ease-in-out;
+    
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    img#frame_img_dst:hover+span.tooltip {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        opacity: 1;   
+    }
 }
-
-html.ios .listEntry:hover  {background-color:transparent}
-
